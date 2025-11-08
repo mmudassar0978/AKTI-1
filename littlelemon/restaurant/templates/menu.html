@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Our Menu</h2>
+
+<ul style="list-style: none; padding: 0;">
+    {% for item in items %}
+        <li style="margin-bottom: 15px;">
+            <strong>{{ item.name }}</strong><br>
+            ${{ item.price }} <br>
+        </li>
+    {% empty %}
+        <p>No menu items available.</p>
+    {% endfor %}
+</ul>
+
+{% endblock %}

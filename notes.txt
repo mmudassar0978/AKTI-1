@@ -1,0 +1,40 @@
+Little Lemon API Project Credentials
+===================================
+
+Superuser:
+Username: littlelemonadmin
+Password: admin123
+
+Manager User:
+Username: manager
+Password: manager123
+
+Delivery Crew User:
+Username: delivery
+Password: delivery123
+
+Customer User:
+Username: customer
+Password: customer123
+
+API Endpoints:
+- Admin: http://localhost:8000/admin/
+- API Base: http://localhost:8000/api/
+- Authentication: http://localhost:8000/auth/
+
+Authentication Endpoints:
+- Register: POST /auth/users/
+- Login: POST /auth/token/login/
+- Logout: POST /auth/token/logout/
+
+API Endpoints:
+- Categories: GET/POST /api/categories/
+- Menu Items: GET/POST /api/menu-items/
+- Single Menu Item: GET/PUT/PATCH/DELETE /api/menu-items/{id}/
+- Cart: GET/POST/DELETE /api/cart/menu-items/
+- Orders: GET/POST /api/orders/
+- Single Order: GET/PUT/PATCH /api/orders/{id}/
+- Managers: GET/POST /api/groups/manager/users/
+- Remove Manager: DELETE /api/groups/manager/users/{user_id}/
+- Delivery Crew: GET/POST /api/groups/delivery-crew/users/
+- Remove Delivery Crew: DELETE /api/groups/delivery-crew/users/{user_id}/
